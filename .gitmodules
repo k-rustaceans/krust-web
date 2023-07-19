@@ -1,0 +1,6 @@
+[submodule "chat"]
+	path = chat
+	url = ./chat
+[submodule "post"]
+	path = post
+	url = ./post

@@ -1,6 +1,5 @@
 [workspace]
 members=[
-    "post",
-    "chat",
+    
     "notification"
 ]

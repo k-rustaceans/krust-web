@@ -1,6 +1,6 @@
-[submodule "chat"]
-	path = chat
-	url = ./chat
 [submodule "post"]
 	path = post
-	url = ./post
+	url = git@github.com:k-rustaceans/post.git
+[submodule "chat"]
+	path = chat
+	url = git@github.com:k-rustaceans/chat.git

@@ -1,6 +1,0 @@
-[submodule "post"]
-	path = post
-	url = git@github.com:k-rustaceans/post.git
-[submodule "chat"]
-	path = chat
-	url = git@github.com:k-rustaceans/chat.git

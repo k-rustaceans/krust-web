@@ -1,0 +1,3 @@
+[submodule "krust-post"]
+	path = krust-post
+	url = https://github.com/k-rustaceans/krust-post.git

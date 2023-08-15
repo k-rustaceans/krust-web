@@ -1,1 +1,3 @@
 # krust-web
+
+Have fun

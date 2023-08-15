@@ -1,3 +1,3 @@
 # krust-web
 
-Have fun ?
+Have fun

@@ -1383,7 +1383,6 @@ dependencies = [
  "env_logger",
  "event-driven-library",
  "futures",
- "futures-util",
  "log",
  "macro_rules_attribute",
  "paste",

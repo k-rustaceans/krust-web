@@ -12,7 +12,7 @@ services:
       - "5433:5432"
   krust-post:
     build:
-      context: .
+      context: ./krust-post
     depends_on:
       - postgres
       - nats

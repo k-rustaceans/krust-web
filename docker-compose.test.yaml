@@ -1,0 +1,31 @@
+version: "3.5"
+services:
+  postgres:
+    image: postgres:14.5
+    volumes:
+      - ./pg-init-scripts:/docker-entrypoint-initdb.d
+    environment:
+      - POSTGRES_MULTIPLE_DATABASES=k_rust_post
+      - POSTGRES_USER=k-rust
+      - POSTGRES_PASSWORD=abcabc123
+    ports:
+      - "5433:5432"
+  krust-post:
+    build:
+      context: ./krust-post
+    depends_on:
+      - postgres
+      - nats
+    environment:
+      - RUST_BACKTRACE=1
+    command: "cargo test"
+  nats:
+    image: nats
+    ports:
+      - "8222:8222"
+      - "4222:4222"
+    command: "--http_port 8222 -js"
+    networks: ["nats"]
+networks:
+  nats:
+    name: nats
